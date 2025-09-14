@@ -1,0 +1,18 @@
+.prof {
+  transform: scaleX(0);
+  transform-origin: left;
+  background-image: linear-gradient(to right, #3b82f6, #2dd4bf);
+  transition: transform 600ms ease-in;
+}
+
+.mycard:hover .prof {
+  transform: scaleX(var(--fill, 1));
+  transition: transform 700ms ease-in;
+}
+.text-card{
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+.mycard:hover .text-card{
+  opacity: 1;
+}
