@@ -5,13 +5,13 @@ import COMSATS_logo from "../assets/COMSATS_logo.png";
 
 const ExperienceCard = ({ logo, title, date, description, tags }) => {
   return (
-    <div className="bg-white border border-gray-200 px-8 py-6 rounded-2xl w-[80%] hover:scale-105 transition-all duration-300 hover:shadow-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-teal-50">
+    <div className="bg-white border border-gray-200 px-8 py-6 max-md:px-6 max-md:py-5 rounded-2xl w-[80%] max-md:w-[100%] hover:scale-105 transition-all duration-300 hover:shadow-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-teal-50">
       <div className="flex items-center gap-4">
-        <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden">
-          <img src={logo} alt={title} className="w-10 h-10 object-contain" />
+        <div className="w-16 h-16 max-md:w-12 max-md:h-12 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden">
+          <img src={logo} alt={title} className="w-10 h-10 object-contain max-md:w-7 max-md:h-7" />
         </div>
         <div>
-          <h3 className="text-xl font-bold text-black">{title}</h3>
+          <h3 className="text-xl max-md:text-lg font-bold text-black">{title}</h3>
           <p className="text-gray-500 text-sm">{date}</p>
         </div>
       </div>
@@ -50,7 +50,7 @@ const EducationAndExperience = () => {
       date: "Sep 2025 – Present",
       description:
         "Assisting in web development sessions for IEEE CS, mentoring juniors, and promoting modern design practices in team projects.",
-      tags: ["HTML5, CSS3 & JavaScript(ES6+)", "Reports, Managing"],
+      tags: ["HTML5, CSS3 & JavaScript", "Report, Manage"],
     },
     {
       logo: COMSATS_logo,
@@ -65,10 +65,10 @@ const EducationAndExperience = () => {
   return (
     <>
       <div className="w-full bg-gradient-to-r from-white via-blue-600 to-white h-[0.5px] block m-0 p-0"></div>
-      <div className="py-[4rem] px-[6rem]">
+      <div className="py-[4rem] px-[6rem] max-md:px-[1rem]">
         <div>
           <div className="text-center">
-            <div className="text-4xl font-extrabold bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent mx-auto">
+            <div className="text-4xl max-md:text-2xl font-extrabold bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent mx-auto">
               Experience & Education
             </div>
             <div className="bg-gradient-to-r from-blue-500 to-teal-400 h-[4px] w-30 rounded-2xl mx-auto mt-2"></div>

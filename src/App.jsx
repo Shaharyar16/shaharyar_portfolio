@@ -12,7 +12,9 @@ import EducationAndExperience from "./components/EducationAndExperience";
 function App() {
   return (
     <>
+
       <Navbar />
+    
 
       <div className="bg-gradient-to-br from-purple-100 via-zinc-350 to-emerald-100 pt-20 opacity-85">
         <section id="home">

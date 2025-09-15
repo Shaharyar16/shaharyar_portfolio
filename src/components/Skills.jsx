@@ -6,10 +6,10 @@ const Skills = () => {
     <>
     <div className=" w-full bg-gradient-to-r from-white via-blue-600 to-white h-[0.5px] block m-0 p-0"></div>
     <div>
-      <div className='py-[4rem] px-[6rem] '>
+      <div className='py-[4rem] px-[6rem] max-md:px-[1.5rem]'>
         <div>
         <div className='text-center'>
-        <div className='text-4xl font-extrabold bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent mx-auto text-center'>
+        <div className='text-4xl max-md:text-2xl font-extrabold bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent mx-auto text-center'>
             Skills & Technologies
             </div>
             <div className='bg-gradient-to-r from-blue-500 to-teal-400 h-[4px] w-30 rounded-2xl mx-auto mt-2'></div>
@@ -17,7 +17,7 @@ const Skills = () => {
       </div>
       </div>
       <div>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-20'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-20 max-md:mt-10'>
         <Card logo = "⚛️" name = "React JS" proficiency = {70} text = "Building dynamic user interfaces with React and Hooks."/>
         <Card logo = "🎨" name = "Tailwind CSS" proficiency = {60} text = "Designing responsive and modern user interfaces with utility-first styling."/>
         <Card logo = "⚡" name = "n8n" proficiency = {30} text = "Automating workflows and integrating multiple apps with low-code solutions."/>

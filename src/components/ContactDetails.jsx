@@ -3,11 +3,11 @@ import SmallCard from "./SmallCard";
 
 const ContactDetails = () => {
   return (
-    <div className="text-black">
+    <div className="text-black max-md:mt-6">
       <div>
         <div>
-          <h1 className="font-bold text-2xl">Get in Touch</h1>
-          <p className="text-gray-500 text-[15px] mt-3">
+          <h1 className="font-bold text-2xl max-md:text-center">Get in Touch</h1>
+          <p className="text-gray-500 text-[15px] mt-3 max-md:text-center">
             I'm always open to discussing new opportunities, creative projects,
             or potential collaborations. Whether you're a company looking to
             hire, or you're a fellow developer wanting to connect, I'd love to
@@ -31,7 +31,7 @@ const ContactDetails = () => {
             text="RawalPindi, Pakistan"
           />
         </div>
-        <div>
+        <div className="max-md:pl-4">
           <h1 className="text-xl font-bold text-[16px]">Follow Me</h1>
           <div className="flex gap-5 mt-3">
             <div className="hover:scale-125 transform transition-transform duration-200 shadow-xl">

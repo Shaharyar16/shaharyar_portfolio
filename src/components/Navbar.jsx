@@ -22,19 +22,19 @@ const Navbar = () => {
 
   return (
     <div
-      className={`w-full fixed top-0 left-0 z-50 px-10 py-5 transition-colors duration-300 ${
+      className={`w-full fixed top-0 left-0 z-50 px-10 py-5 transition-colors max-md:px-0 duration-300 ${
         scrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
       <div className="flex mx-auto items-center justify-between">
         {/* Name */}
-        <h2 className="ml-7 text-2xl font-extrabold bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">
+        <h2 className="ml-7 text-2xl max-md:text-[1.5rem] font-extrabold bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">
           Shaharyar Zia
         </h2>
 
         <div className="flex gap-12 mr-10">
           {/* Nav Links */}
-          <div className="flex gap-6">
+          <div className="flex gap-6 max-md:hidden">
             <a
               className="hover:scale-105 transition duration-200 ease-in-out hover:bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent bg-black"
               href="#home"
@@ -74,7 +74,7 @@ const Navbar = () => {
           </div>
 
           {/* Icons + Time + Lang */}
-          <div className="text-center flex justify-center gap-3 items-center text-black">
+          <div className="text-center flex justify-center gap-3 max-md:gap-4 items-center text-black">
             <a
               className="hover:scale-115 transform transition-transform duration-200 shadow-xl"
               href="https://www.linkedin.com/in/shaharyar-zia-b93b97327"
@@ -99,7 +99,7 @@ const Navbar = () => {
               </svg>
             </a>
             <a
-              className="hover:scale-115 transform transition-transform duration-200 shadow-xl"
+              className="hover:scale-115 transform transition-transform  duration-200 shadow-xl"
               href="https://github.com/Shaharyar16"
               target="_blank"
               rel="noopener noreferrer"
@@ -128,7 +128,7 @@ const Navbar = () => {
               </svg>
             </a>
 
-            <div className="flex">
+            <div className="flex max-md:hidden">
               <Clock size={18} />
               <span className="ml-2 text-sm font-medium">
                 {time.toLocaleTimeString([], {

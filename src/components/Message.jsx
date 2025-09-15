@@ -27,8 +27,8 @@ const Message = () => {
   };
 
   return (
-    <div className="bg-white shadow-xl rounded-2xl p-8 text-gray-500">
-      <h2 className="text-2xl font-semibold mb-6 text-black">
+    <div className="bg-white shadow-xl rounded-2xl p-8 text-gray-500 max-md:w-full max-md:px-3">
+      <h2 className="text-2xl font-semibold mb-6 text-black max-md:text-center">
         Send a Message
       </h2>
 
